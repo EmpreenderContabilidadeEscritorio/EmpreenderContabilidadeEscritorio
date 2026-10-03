@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Empreender Contabilidade e Escritório Virtual - Serviços de contabilidade, apoio administrativo e escritório virtual em Aracaju - Sergipe.">
+
+    <meta name="keywords"
+        content="contabilidade Aracaju, contador Aracaju, escritório virtual Aracaju, serviços contábeis Sergipe, Empreender Contabilidade">
+
+    <meta name="author" content="Empreender Contabilidade e Escritório Virtual">
+
+    <title>Empreender Contabilidade e Escritório Virtual | Aracaju - SE</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+
+        :root {
+            --primary: #0b4f6c;
+            --primary-dark: #07384d;
+            --secondary: #18a678;
+            --secondary-dark: #12835e;
+            --light: #f5f9fc;
+            --dark: #17212b;
+            --gray: #6c757d;
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            background: #fff;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.97);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-weight: 800;
+            color: var(--primary) !important;
+            font-size: 1.2rem;
+        }
+
+        .navbar-brand span {
+            color: var(--secondary);
+        }
+
+        .navbar-nav .nav-link {
+            color: #34404b;
+            font-weight: 600;
+            margin-left: 15px;
+            transition: 0.3s;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--secondary);
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+
+            background:
+                linear-gradient(
+                    120deg,
+                    rgba(7, 56, 77, 0.97),
+                    rgba(11, 79, 108, 0.90)
+                ),
+                url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=2000&q=80");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            background: rgba(24, 166, 120, 0.12);
+            right: -100px;
+            bottom: -150px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #55d6a5;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 700px;
+            color: rgba(255,255,255,0.88);
+            line-height: 1.8;
+        }
+
+        .btn-main {
+            background: var(--secondary);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-main:hover {
+            background: var(--secondary-dark);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-light-custom {
+            padding: 13px 27px;
+            border: 2px solid rgba(255,255,255,0.7);
+            color: white;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-outline-light-custom:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            margin-bottom: 55px;
+        }
+
+        .section-title .tag {
+            color: var(--secondary);
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            font-size: 0.8rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-top: 8px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 15px auto 0;
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-section {
+            background: var(--light);
+        }
+
+        .about-card {
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+            height: 100%;
+        }
+
+        .about-icon {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background: rgba(24,166,120,0.12);
+            color: var(--secondary);
+            font-size: 1.7rem;
+            margin-bottom: 25px;
+        }
+
+        .about-card h3 {
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .about-card p {
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .service-card {
+            border: 1px solid #e9eef2;
+            border-radius: 16px;
+            padding: 35px 28px;
+            height: 100%;
+            background: white;
+            transition: 0.35s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(24,166,120,0.35);
+            box-shadow: 0 15px 40px rgba(11,79,108,0.10);
+        }
+
+        .service-icon {
+            width: 65px;
+            height: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(11,79,108,0.08);
+            color: var(--primary);
+            border-radius: 14px;
+            font-size: 1.7rem;
+            margin-bottom: 22px;
+        }
+
+        .service-card h4 {
+            color: var(--primary);
+            font-weight: 750;
+            margin-bottom: 14px;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        /* =========================
+           NUMBERS
+        ========================= */
+
+        .numbers {
+            background: var(--primary);
+            color: white;
+        }
+
+        .number-box {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .number-box i {
+            font-size: 2rem;
+            color: #55d6a5;
+            margin-bottom: 12px;
+        }
+
+        .number-box h3 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin: 0;
+        }
+
+        .number-box p {
+            color: rgba(255,255,255,0.7);
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        /* =========================
+           ACTIVITIES
+        ========================= */
+
+        .activity-card {
+            background: var(--light);
+            padding: 30px;
+            border-left: 5px solid var(--secondary);
+            border-radius: 10px;
+            height: 100%;
+        }
+
+        .activity-card .cnae {
+            color: var(--secondary);
+            font-weight: 800;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        .activity-card h5 {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .activity-card p {
+            color: var(--gray);
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        /* =========================
+           DIFFERENTIALS
+        ========================= */
+
+        .differential {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 30px;
+        }
+
+        .differential-icon {
+            min-width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(24,166,120,0.12);
+            color: var(--secondary);
+            font-size: 1.3rem;
+        }
+
+        .differential h5 {
+            color: var(--primary);
+            font-weight: 750;
+            margin-bottom: 5px;
+        }
+
+        .differential p {
+            color: var(--gray);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* =========================
+           COMPANY DATA
+        ========================= */
+
+        .data-section {
+            background: var(--light);
+        }
+
+        .data-table {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 18px 25px;
+            border-bottom: 1px solid #edf0f2;
+        }
+
+        .data-row:last-child {
+            border-bottom: none;
+        }
+
+        .data-label {
+            color: var(--gray);
+            font-weight: 600;
+        }
+
+        .data-value {
+            color: var(--primary);
+            font-weight: 700;
+            text-align: right;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact-section {
+            background: white;
+        }
+
+        .contact-card {
+            background: var(--primary);
+            color: white;
+            border-radius: 20px;
+            padding: 45px;
+            height: 100%;
+        }
+
+        .contact-card h3 {
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 25px;
+        }
+
+        .contact-item i {
+            color: #55d6a5;
+            font-size: 1.4rem;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .contact-item span,
+        .contact-item a {
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: white;
+        }
+
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            height: 100%;
+            min-height: 430px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            background:
+                linear-gradient(
+                    120deg,
+                    var(--secondary),
+                    #0c9b70
+                );
+            color: white;
+            padding: 70px 0;
+        }
+
+        .cta h2 {
+            font-weight: 800;
+            font-size: 2.5rem;
+        }
+
+        .cta p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.1rem;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary);
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 800;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-white:hover {
+            background: #f0f0f0;
+            color: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #071f2c;
+            color: white;
+            padding: 60px 0 25px;
+        }
+
+        footer h5 {
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        footer p,
+        footer li {
+            color: rgba(255,255,255,0.65);
+            line-height: 1.8;
+        }
+
+        footer ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        footer ul li {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: rgba(255,255,255,0.65);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .footer-brand {
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        .footer-brand span {
+            color: #55d6a5;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            margin-right: 7px;
+            font-size: 1.1rem;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            margin-top: 40px;
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* =========================
+           WHATSAPP
+        ========================= */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #25D366;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            z-index: 999;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37,211,102,0.35);
+            transition: 0.3s;
+        }
+
+        .whatsapp:hover {
+            color: white;
+            transform: scale(1.08);
+        }
+
+        /* =========================
+           BACK TO TOP
+        ========================= */
+
+        .back-top {
+            position: fixed;
+            right: 25px;
+            bottom: 95px;
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: var(--primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            z-index: 998;
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media (max-width: 991px) {
+
+            .navbar-nav {
+                padding-top: 15px;
+            }
+
+            .navbar-nav .nav-link {
+                margin-left: 0;
+                padding: 10px 0;
+            }
+
+            .hero {
+                min-height: 650px;
+            }
+
+            section {
+                padding: 70px 0;
+            }
+
+        }
+
+        @media (max-width: 767px) {
+
+            .hero {
+                min-height: 620px;
+                text-align: center;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero .btn-main,
+            .hero .btn-outline-light-custom {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .contact-card {
+                padding: 30px;
+            }
+
+            .data-row {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .data-value {
+                text-align: left;
+            }
+
+            .map-container {
+                min-height: 350px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#inicio">
+                <i class="bi bi-bar-chart-fill"></i>
+                Empreender <span>Contabilidade</span>
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#atividades">Atividades</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#empresa">Empresa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <header class="hero" id="inicio">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <span class="hero-badge">
+                    <i class="bi bi-check-circle-fill"></i>
+                    Empresa ativa desde 2005
+                </span>
+
+                <h1>
+                    Contabilidade que
+                    <span>ajuda sua empresa</span>
+                    a crescer.
+                </h1>
+
+                <p>
+                    Soluções contábeis, administrativas e de escritório
+                    virtual para empresas que buscam organização,
+                    segurança e praticidade em seus negócios.
+                </p>
+
+                <div class="mt-4">
+
+                    <a href="#contato" class="btn btn-main me-2">
+                        <i class="bi bi-chat-dots-fill me-2"></i>
+                        Fale Conosco
+                    </a>
+
+                    <a href="#servicos" class="btn btn-outline-light-custom">
+                        Conheça nossos serviços
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         SOBRE
+    ========================== -->
+
+    <section class="about-section" id="sobre">
+
+        <div class="container">
+
+            <div class="section-title text-center">
+
+                <div class="tag">
+                    Sobre nós
+                </div>
+
+                <h2>
+                    Experiência para cuidar do seu negócio
+                </h2>
+
+                <p>
+                    A Empreender Contabilidade e Escritório Virtual atua
+                    oferecendo soluções para empresas que precisam de
+                    organização, suporte administrativo e serviços contábeis.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+
+                    <div class="about-card">
+
+                        <div class="about-icon">
+                            <i class="bi bi-building"></i>
+                        </div>
+
+                        <h3>
+                            Empreender Contabilidade
+                        </h3>
+
+                        <p>
+                            Fundada em 25 de julho de 2005, a Empreender
+                            Contabilidade e Escritório Virtual está localizada
+                            em Aracaju, Sergipe, e possui situação cadastral
+                            ativa.
+                        </p>
+
+                        <p>
+                            Nosso trabalho é oferecer suporte para que
+                            empreendedores possam manter seus negócios
+                            organizados e concentrar seus esforços no
+                            crescimento da empresa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="about-card">
+
+                        <div class="about-icon">
+                            <i class="bi bi-person-check-fill"></i>
+                        </div>
+
+                        <h3>
+                            Atendimento profissional
+                        </h3>
+
+                        <p>
+                            Contamos com responsável técnico devidamente
+                            registrado no Conselho Regional de Contabilidade
+                            de Sergipe.
+                        </p>
+
+                        <p>
+                            Nosso responsável é
+                            <strong>Augusto Cesar Mendonca</strong>,
+                            Sócio-Administrador da empresa.
+                        </p>
+
+                        <div class="mt-4">
+
+                            <span class="badge text-bg-success p-2">
+                                <i class="bi bi-patch-check-fill"></i>
+                                CRC SE-000787/O
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SERVIÇOS
+    ========================== -->
+
+    <section id="servicos">
+
+        <div class="container">
+
+            <div class="section-title text-center">
+
+                <div class="tag">
+                    Nossos serviços
+                </div>
+
+                <h2>
+                    Soluções para sua empresa
+                </h2>
+
+                <p>
+                    Serviços pensados para facilitar a rotina empresarial
+                    e proporcionar mais organização ao seu negócio.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-calculator-fill"></i>
+                        </div>
+
+                        <h4>
+                            Serviços Contábeis
+                        </h4>
+
+                        <p>
+                            Apoio nas atividades de contabilidade e
+                            organização das informações necessárias para
+                            a gestão da empresa.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-file-earmark-text-fill"></i>
+                        </div>
+
+                        <h4>
+                            Apoio Administrativo
+                        </h4>
+
+                        <p>
+                            Serviços combinados de escritório e suporte
+                            administrativo para facilitar as atividades
+                            do dia a dia empresarial.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-laptop-fill"></i>
+                        </div>
+
+                        <h4>
+                            Escritório Virtual
+                        </h4>
+
+                        <p>
+                            Estrutura e serviços de escritório para
+                            profissionais e empresas que buscam
+                            praticidade e organização.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-folder-check"></i>
+                        </div>
+
+                        <h4>
+                            Organização de Documentos
+                        </h4>
+
+                        <p>
+                            Preparação de documentos e serviços
+                            especializados de apoio administrativo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+
+                        <h4>
+                            Organização Empresarial
+                        </h4>
+
+                        <p>
+                            Apoio para manter informações e processos
+                            empresariais mais organizados e eficientes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="service-card">
+
+                        <div class="service-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+
+                        <h4>
+                            Atendimento
+                        </h4>
+
+                        <p>
+                            Atendimento próximo para entender as
+                            necessidades da sua empresa e direcionar
+                            as melhores soluções.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         NÚMEROS
+    ========================== -->
+
+    <section class="numbers">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-6 col-lg-3">
+
+                    <div class="number-box">
+
+                        <i class="bi bi-calendar-check"></i>
+
+                        <h3>2005</h3>
+
+                        <p>
+                            Ano de fundação
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-lg-3">
+
+                    <div class="number-box">
+
+                        <i class="bi bi-briefcase-fill"></i>
+
+                        <h3>21+</h3>
+
+                        <p>
+                            Anos de atividade
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-lg-3">
+
+                    <div class="number-box">
+
+                        <i class="bi bi-shield-check"></i>
+
+                        <h3>ATIVA</h3>
+
+                        <p>
+                            Situação cadastral
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-lg-3">
+
+                    <div class="number-box">
+
+                        <i class="bi bi-geo-alt-fill"></i>
+
+                        <h3>SE</h3>
+
+                        <p>
+                            Aracaju - Sergipe
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ATIVIDADES
+    ========================== -->
+
+    <section id="atividades">
+
+        <div class="container">
+
+            <div class="section-title text-center">
+
+                <div class="tag">
+                    Atividades empresariais
+                </div>
+
+                <h2>
+                    Nossas áreas de atuação
+                </h2>
+
+                <p>
+                    Conheça as atividades econômicas registradas para
+                    a Empreender Contabilidade e Escritório Virtual.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+
+                    <div class="activity-card">
+
+                        <div class="cnae">
+                            CNAE PRINCIPAL
+                        </div>
+
+                        <h5>
+                            82.11-3-00
+                        </h5>
+
+                        <p>
+                            Serviços combinados de escritório e
+                            apoio administrativo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="activity-card">
+
+                        <div class="cnae">
+                            CNAE SECUNDÁRIO
+                        </div>
+
+                        <h5>
+                            82.19-9-99
+                        </h5>
+
+                        <p>
+                            Preparação de documentos e serviços
+                            especializados de apoio administrativo
+                            não especificados anteriormente.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-4">
+
+                    <div class="activity-card">
+
+                        <div class="cnae">
+                            CNAE SECUNDÁRIO
+                        </div>
+
+                        <h5>
+                            69.20-6-01
+                        </h5>
+
+                        <p>
+                            Atividades de contabilidade.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DIFERENCIAIS
+    ========================== -->
+
+    <section class="about-section">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-5">
+
+                    <div class="section-title mb-4">
+
+                        <div class="tag">
+                            Por que escolher?
+                        </div>
+
+                        <h2>
+                            Organização para você empreender melhor
+                        </h2>
+
+                        <p>
+                            Ter suporte profissional nas atividades
+                            administrativas e contábeis permite que
+                            o empreendedor tenha mais tempo para cuidar
+                            do crescimento do seu negócio.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-7">
+
+                    <div class="differential">
+
+                        <div class="differential-icon">
+                            <i class="bi bi-check-lg"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Experiência
+                            </h5>
+
+                            <p>
+                                Empresa fundada em 2005 e com atuação
+                                em Aracaju, Sergipe.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="differential">
+
+                        <div class="differential-icon">
+                            <i class="bi bi-check-lg"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Atendimento próximo
+                            </h5>
+
+                            <p>
+                                Comunicação direta para entender as
+                                necessidades de cada negócio.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="differential">
+
+                        <div class="differential-icon">
+                            <i class="bi bi-check-lg"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Soluções empresariais
+                            </h5>
+
+                            <p>
+                                Serviços contábeis, administrativos e
+                                de escritório virtual em um só lugar.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="differential">
+
+                        <div class="differential-icon">
+                            <i class="bi bi-check-lg"></i>
+                        </div>
+
+                        <div>
+
+                            <h5>
+                                Empresa ativa
+                            </h5>
+
+                            <p>
+                                Situação cadastral ativa e registro
+                                profissional informado para atuação
+                                contábil.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DADOS DA EMPRESA
+    ========================== -->
+
+    <section class="data-section" id="empresa">
+
+        <div class="container">
+
+            <div class="section-title text-center">
+
+                <div class="tag">
+                    Informações empresariais
+                </div>
+
+                <h2>
+                    Dados da empresa
+                </h2>
+
+                <p>
+                    Informações cadastrais da Empreender Contabilidade
+                    e Escritório Virtual LTDA.
+                </p>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-9">
+
+                    <div class="data-table">
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                CNPJ
+                            </div>
+
+                            <div class="data-value">
+                                07.532.504/0001-00
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Razão Social
+                            </div>
+
+                            <div class="data-value">
+                                Empreender Contabilidade e Escritório Virtual LTDA
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Nome Fantasia
+                            </div>
+
+                            <div class="data-value">
+                                Empreender Contabilidade e Escritório Virtual
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Data de Abertura
+                            </div>
+
+                            <div class="data-value">
+                                25/07/2005
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Porte
+                            </div>
+
+                            <div class="data-value">
+                                Micro Empresa
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Natureza Jurídica
+                            </div>
+
+                            <div class="data-value">
+                                Sociedade Empresária Limitada
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Simples Nacional
+                            </div>
+
+                            <div class="data-value">
+                                Sim
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Data de opção pelo Simples
+                            </div>
+
+                            <div class="data-value">
+                                01/01/2026
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Capital Social
+                            </div>
+
+                            <div class="data-value">
+                                R$ 60.000,00
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Tipo
+                            </div>
+
+                            <div class="data-value">
+                                Matriz
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Situação
+                            </div>
+
+                            <div class="data-value text-success">
+                                <i class="bi bi-circle-fill"
+                                   style="font-size: 8px;"></i>
+                                Ativa
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                CRC
+                            </div>
+
+                            <div class="data-value">
+                                SE-000787/O
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Responsável
+                            </div>
+
+                            <div class="data-value">
+                                Augusto Cesar Mendonca
+                            </div>
+
+                        </div>
+
+
+                        <div class="data-row">
+
+                            <div class="data-label">
+                                Qualificação
+                            </div>
+
+                            <div class="data-value">
+                                Sócio-Administrador
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+
+    <section class="cta">
+
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+                <div class="col-lg-8">
+
+                    <h2>
+                        Vamos conversar sobre sua empresa?
+                    </h2>
+
+                    <p class="mb-0">
+                        Entre em contato com a Empreender Contabilidade
+                        e conheça nossas soluções.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end">
+
+                    <a
+                        href="https://wa.me/5579999587033"
+                        target="_blank"
+                        class="btn btn-white">
+
+                        <i class="bi bi-whatsapp me-2"></i>
+                        Falar pelo WhatsApp
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTATO
+    ========================== -->
+
+    <section class="contact-section" id="contato">
+
+        <div class="container">
+
+            <div class="section-title text-center">
+
+                <div class="tag">
+                    Entre em contato
+                </div>
+
+                <h2>
+                    Estamos à disposição
+                </h2>
+
+                <p>
+                    Entre em contato por telefone, WhatsApp ou e-mail.
+                    Será um prazer atender você.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+                <div class="col-lg-5">
+
+                    <div class="contact-card">
+
+                        <h3>
+                            Fale conosco
+                        </h3>
+
+
+                        <div class="contact-item">
+
+                            <i class="bi bi-whatsapp"></i>
+
+                            <div>
+
+                                <strong>
+                                    WhatsApp
+                                </strong>
+
+                                <a
+                                    href="https://wa.me/5579999587033"
+                                    target="_blank">
+
+                                    (79) 99958-7033
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <i class="bi bi-telephone-fill"></i>
+
+                            <div>
+
+                                <strong>
+                                    Telefone
+                                </strong>
+
+                                <a href="tel:+557932146667">
+
+                                    (79) 3214-6667
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <i class="bi bi-envelope-fill"></i>
+
+                            <div>
+
+                                <strong>
+                                    E-mail
+                                </strong>
+
+                                <a
+                                    href="mailto:frasheriendrikl@gmail.com">
+
+                                    frasheriendrikl@gmail.com
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <i class="bi bi-geo-alt-fill"></i>
+
+                            <div>
+
+                                <strong>
+                                    Endereço
+                                </strong>
+
+                                <span>
+                                    Rua Ver João Claro, 44<br>
+                                    Dezoito do Forte<br>
+                                    Aracaju - SE<br>
+                                    CEP 49072-750
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <hr style="border-color: rgba(255,255,255,.15);">
+
+
+                        <div class="mt-4">
+
+                            <strong>
+                                Horário de atendimento
+                            </strong>
+
+                            <p class="mt-2 mb-0">
+                                Entre em contato conosco para
+                                informações sobre atendimento.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-7">
+
+                    <div class="map-container">
+
+                        <iframe
+                            src="https://www.google.com/maps?q=Rua%20Ver%20Joao%20Claro%2044,%20Dezoito%20do%20Forte,%20Aracaju%20SE&output=embed"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row g-5">
+
+                <div class="col-lg-5">
+
+                    <div class="footer-brand">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        Empreender <span>Contabilidade</span>
+                    </div>
+
+                    <p class="mt-3">
+                        Empreender Contabilidade e Escritório Virtual,
+                        oferecendo soluções contábeis e administrativas
+                        para empresas em Aracaju e região.
+                    </p>
+
+                    <div class="social-icons mt-4">
+
+                        <a
+                            href="https://wa.me/5579999587033"
+                            target="_blank"
+                            aria-label="WhatsApp">
+
+                            <i class="bi bi-whatsapp"></i>
+
+                        </a>
+
+                        <a
+                            href="mailto:frasheriendrikl@gmail.com"
+                            aria-label="E-mail">
+
+                            <i class="bi bi-envelope"></i>
+
+                        </a>
+
+                        <a
+                            href="tel:+5579999587033"
+                            aria-label="Telefone">
+
+                            <i class="bi bi-telephone"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-6 col-lg-3">
+
+                    <h5>
+                        Navegação
+                    </h5>
+
+                    <ul>
+
+                        <li>
+                            <a href="#inicio">Início</a>
+                        </li>
+
+                        <li>
+                            <a href="#sobre">Sobre nós</a>
+                        </li>
+
+                        <li>
+                            <a href="#servicos">Serviços</a>
+                        </li>
+
+                        <li>
+                            <a href="#atividades">Atividades</a>
+                        </li>
+
+                        <li>
+                            <a href="#empresa">Empresa</a>
+                        </li>
+
+                        <li>
+                            <a href="#contato">Contato</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <div class="col-6 col-lg-4">
+
+                    <h5>
+                        Informações
+                    </h5>
+
+                    <ul>
+
+                        <li>
+                            CNPJ: 07.532.504/0001-00
+                        </li>
+
+                        <li>
+                            CRC: SE-000787/O
+                        </li>
+
+                        <li>
+                            Aracaju - Sergipe
+                        </li>
+
+                        <li>
+                            CEP: 49072-750
+                        </li>
+
+                        <li>
+                            Situação: Ativa
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <div class="copyright text-center">
+
+                © 2026 Empreender Contabilidade e Escritório Virtual LTDA.
+                Todos os direitos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         BOTÃO WHATSAPP
+    ========================== -->
+
+    <a
+        href="https://wa.me/5579999587033"
+        target="_blank"
+        class="whatsapp"
+        aria-label="Falar pelo WhatsApp">
+
+        <i class="bi bi-whatsapp"></i>
+
+    </a>
+
+
+    <!-- =========================
+         VOLTAR AO TOPO
+    ========================== -->
+
+    <a
+        href="#inicio"
+        class="back-top"
+        aria-label="Voltar ao topo">
+
+        <i class="bi bi-arrow-up"></i>
+
+    </a>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
